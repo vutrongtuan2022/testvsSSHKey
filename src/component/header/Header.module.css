@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    background-color: #333;
+    color: white;
+}
+
+.left_header {
+    display: flex;
+    align-items: center;
+    margin:4px 0;
+    padding-left: 16px;
+    list-style: none;
+}
+
+.left_header_movies {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(250, 34, 34);
+}
+.left_header_nav {
+    gap: 20px;
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+.left_header_movies ,.left_header_nav :hover {
+   cursor: pointer;
+}
+.left_header_nav :hover {
+    color: red;
+}
+.right_header {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    list-style: none;
+    gap: 20px;
+}
+.search_header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    color: #333;
+    border-radius: 5px;
+}
+.button_search{
+    background-color: red;
+    color: white;
+    border: none;
+    padding:4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
