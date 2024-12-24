@@ -6,6 +6,14 @@
   margin: auto;
 }
 
+.slideshowContainer {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  margin: auto;
+}
+
 .mySlides {
   display: none;
 }
@@ -14,7 +22,6 @@ img {
   vertical-align: middle;
   width: 100%;
 }
-
 
 /* Next & previous buttons */
 .prev,
@@ -33,7 +40,7 @@ img {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position the next button to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -70,7 +77,6 @@ img {
   justify-content: center;
   gap: 30px;
   padding: 32px;
-
 }
 
 .active:hover {
@@ -110,8 +116,8 @@ img {
   h2 {
     color: #f2f2f2;
     display: flex;
+    font-size: 28px;
     align-items: center;
-    margin-left: 12px;
   }
 }
 
@@ -141,25 +147,68 @@ img {
   gap: 20px;
   margin-top: 20px;
   font-size: bold;
+}
+/* Nút Chi tiết */
+.button_detail {
+  color: white;
+  background-color: black;
+  padding: 4px;
+  width: 100px;
+  height: 40px;
+  font-weight: 700;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
 
+.text_button_detail {
+  margin: auto;
+  transition: font-size 0.2s ease;
+  font-size: 16px;
+}
+
+.text_button_detail:active {
+  font-size: 12px;
+}
+
+/* Nút Xem phim */
+.button_view {
+  color: white;
+  background-color: red;
+  padding: 4px;
+  width: 100px;
+  height: 40px;
+  font-weight: 700;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.text_button_view {
+  margin: auto;
+  transition: font-size 0.2s ease;
+  font-size: 16px;
+}
+
+.text_button_view:active {
+  font-size: 12px; /* Chỉ thay đổi chữ trong nút Xem phim */
 }
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-
   .prev,
   .next,
   .text {
-    font-size: 11px
+    font-size: 11px;
   }
 }

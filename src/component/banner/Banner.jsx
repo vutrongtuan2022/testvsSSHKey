@@ -78,30 +78,8 @@ function Banner() {
               laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div className={styles.button_content}>
-              <button
-                style={{
-                  color: "white",
-                  backgroundColor: "black",
-                  padding: "4px",
-                  fontWeight: 700,
-                  fontSize: "14px",
-                  lineHeight: "20px",
-                }}
-              >
-                Chi tiết
-              </button>
-              <button
-                style={{
-                  color: "white",
-                  backgroundColor: "red",
-                  padding: "4px",
-                  fontWeight: 700,
-                  fontSize: "14px",
-                  lineHeight: "20px",
-                }}
-              >
-                Xem phim
-              </button>
+              <button className={styles.button_detail}><p className={styles.text_button_detail}>Chi tiết</p></button>
+              <button className={styles.button_view}><p className={styles.text_button_view}>Xem phim</p></button>
             </div>
           </div>
           <div className={styles.right_text_content}>
