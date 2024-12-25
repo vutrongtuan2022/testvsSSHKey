@@ -1,0 +1,76 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 10px 120px;
+  background-color: rgb(26, 148, 255);
+}
+.left_header {
+  font-weight: bold;
+  text-align: left;
+}
+.content_text {
+  padding-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.search_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+/* Đặt kiểu cho input */
+.search_input {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Đặt kiểu cho nút */
+.search_button {
+  display: flex;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  gap: 4px;
+  span {
+    font-size: 16px;
+  }
+}
+
+.search_button:hover {
+  background-color: #0056b3;
+}
+.right_header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  gap: 8px;
+}
+.right_header_user {
+  display: flex;
+  gap: 8px;
+}
+.right_header_text {
+  display: flex;
+  flex-direction: column;
+}
+span {
+  font-weight: bold;
+  font-size: 12px;
+}
